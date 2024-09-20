@@ -1,0 +1,15 @@
+.corpo{
+    background-color: chocolate;
+}
+
+.input-senha{
+    margin-top: 20px;
+}
+.formulario{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 40px 0;
+}
