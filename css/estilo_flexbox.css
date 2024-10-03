@@ -24,3 +24,177 @@
     text-align: center;
     color: aliceblue;
 }
+
+.flex{
+    display: flex;
+    /* Define a direção dos elementos */
+}
+
+.flex > div > img{
+    height: 50px;
+    width: 50px;
+}
+
+.div-coluna{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.secao{
+    display: flex;
+    flex-direction: row;    
+    background-color: brown;
+    /* Coloca um espaço entre os elementos */
+    gap: 10px;
+
+     /* Quebra os elementos para outra linha,
+     caso  não haja espaço suficiente */
+    flex-wrap: wrap;
+}
+
+.secao-imagem{
+    width: 150px;
+    height: 150px;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    flex-direction: row;
+    /* Alinha o elemento ao inicio */
+    justify-content: flex-start;
+}
+.alinhar-centro{
+    display: flex;
+    flex-direction: row;
+    /* alinha os elementos ao centro */
+    justify-content: center;
+}
+.alinhar-direita{
+    display: flex;
+    flex-direction: row;
+    /* alinha os elementos ao centro */
+    justify-content: flex-end;
+}
+
+.alinhar-entre{
+    display: flex;
+    flex-direction: row;
+    /* Aloca os elementos nas pontas e ajusta 
+    os elementos do centro */
+    justify-content: space-between;
+}
+
+.alinhar-redor{
+    display: flex;
+    flex-direction: row;
+     /* Distribui os itens 
+    com espaço ao redor deles */
+    justify-content: space-around;
+   
+}
+
+.alinhar-coluna{
+    display: flex;
+    flex-direction: column;
+     /* Distribui os itens 
+    com espaço ao redor deles */
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   background-color: blue;
+}
+
+.alinhar-itens-centro{
+    display: flex;
+    flex-direction: row;
+     /* Distribui os itens 
+    com espaço ao redor deles */
+    height: 200px;
+   background-color: rgb(255, 174, 0);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;/*Adiciona scroll na horizontal*/
+    gap: 0.4rem;
+    height: 500px;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    flex: 0 0 auto;/*Evita que os cards encolham ou se ajustem automaticamente*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+.card:hover{
+    /*serve para criar um efeito hover, mudando a posição do card*/
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.6);
+}
+.cabecalho-card{
+    padding: 10px;
+    text-align: center;
+}
+.titulo-card{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.subtitulo-card{
+    margin: 0;
+    font-size: 1rem;
+    color: #777;
+}
+.imagem-card{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imagem-card > img{
+    max-width: 100%;/*Mantem o limite maximo do tamanho do container*/
+    height: 150px; /*mantem a proporção da imagem*/
+}
+.imagem-card > figcaption{
+    font-size: 0.8rem;
+    padding: 8px;
+    text-align: center;
+    color: #555;
+}
+.conteudo-card{
+    padding: 10px;
+    background-color: #F5F5F5;
+    text-align: center;
+    height: 70px;
+}
+
+.rodape-card{
+background-color: #3333335e;
+text-align: center;
+padding: 6px;
+}
+
+.botao-card{
+    text-decoration: none;/*remove a decoção de linha*/
+    color: white;
+    background-color: #007bff;
+    border-radius: 4px;
+    padding: 5px 6px;
+    /*Permite definir largura e altura, alinha
+    elementos na mesma linha */
+    display: inline-block;
+}
+.botao-card:hover{
+    background-color: #ad00b3;
+    width: 150px;
+}
